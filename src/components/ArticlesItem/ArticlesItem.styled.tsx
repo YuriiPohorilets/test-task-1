@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
+import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 export const RouteLink = styled(Link)`
   padding: 10px 20px;

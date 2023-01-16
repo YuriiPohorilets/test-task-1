@@ -1,4 +1,4 @@
-import { ArticlesList } from "../components/ArticlesList/ArticlesList";
+import { ArticlesList } from '../components/ArticlesList/ArticlesList';
 
 export const HomePage = () => {
   return (

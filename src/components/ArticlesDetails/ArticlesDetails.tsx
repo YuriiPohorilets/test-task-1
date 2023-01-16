@@ -1,26 +1,22 @@
-import { Typography, Box, Card, CardMedia, CardContent } from "@mui/material";
-import { IArticle } from "../../types/types";
-import { getHighlightedText } from "../../helpers/highlightedText";
+import { Typography, Box, Card, CardMedia, CardContent } from '@mui/material';
+import { IArticle } from '../../types/types';
+import { getHighlightedText } from '../../helpers/highlightedText';
 
-export const ArticlesDetails = ({
+export const ArticlesDetails: React.FC<IArticle> = ({
   title,
   imageUrl,
   summary,
   publishedAt,
   filterValue,
-}: IArticle | any) => {
+}) => {
   const date = new Date(publishedAt);
   const dateNormalize = date.toDateString();
 
   return (
     <>
-      <Box sx={{ mt: "40px", mx: "auto", width: 0.7 }}>
+      <Box sx={{ mt: '40px', mx: 'auto', width: 0.7 }}>
         <Card sx={{ height: 1 }}>
-          <CardMedia
-            sx={{ height: 340, width: 1 }}
-            image={imageUrl}
-            title={title}
-          />
+          <CardMedia sx={{ height: 340, width: 1 }} image={imageUrl} title={title} />
 
           <CardContent>
             <Typography variant="body2">{dateNormalize}</Typography>
@@ -29,10 +25,7 @@ export const ArticlesDetails = ({
               {getHighlightedText(title, filterValue)}
             </Typography>
 
-            <Typography variant="body1">
-              {" "}
-              {getHighlightedText(summary, filterValue)}
-            </Typography>
+            <Typography variant="body1">{getHighlightedText(summary, filterValue)}</Typography>
           </CardContent>
         </Card>
       </Box>
