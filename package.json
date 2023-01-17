@@ -1,6 +1,5 @@
 {
   "name": "test-task-v1",
-  "homepage": "https://YuriiPohorilets.github.io/test-task-1/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

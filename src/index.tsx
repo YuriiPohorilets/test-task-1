@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <BrowserRouter basename="https://delicate-pegasus-54006a.netlify.app/">
+        <BrowserRouter>
           <App />
         </BrowserRouter>
       </Provider>
